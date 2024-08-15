@@ -13,8 +13,8 @@ jobs:
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_DISPLAY=y"]'
       branches: '["petejohanson/zmk/feat/pointers-move-scroll","zmkfirmware/zmk/main petejohanson/zmk/feat/pointers-move-scroll"]'
-      alphas: 'qwerty'
-      nav: 'vi'
-      tap: 'qwerty'
-      extra: 'colemakdh'
+      alphas: '["qwerty"]'
+      nav: '["vi"]'
+      tap: '["qwerty"]'
+      extra: '["colemakdh"]'
       
