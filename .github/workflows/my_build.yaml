@@ -1,7 +1,7 @@
 # Copyright 2024 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'My ZMK Configuration'
+name: "0 - build- My ZMK Configuration"
 on: workflow_dispatch
 jobs:
   build:
@@ -9,12 +9,11 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano_v2"]'
-      shield: '["corne_left","corne_right","settings_reset"]'
+      shield: '["corne_left","corne_right"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_DISPLAY=y"]'
-      branches: '["petejohanson/zmk/feat/pointers-move-scroll","zmkfirmware/zmk/main petejohanson/zmk/feat/pointers-move-scroll"]'
+      branches: '["petejohanson/zmk/feat/pointers-move-scroll"]'
       alphas: '["qwerty"]'
       nav: '["vi"]'
       tap: '["qwerty"]'
       extra: '["colemakdh"]'
-      
